@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+body {
+    margin: 0;
+}
+
+form {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 15px;
+    max-width: 500px;
+    margin: 10pt;
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #5E9186;
+    font-family: 'Orbitron', sans-serif;
+}
+
+input, textarea {
+    font-family: 'Orbitron', sans-serif;
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #E3B663;
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 8px solid #6BF8D9;
+    border-bottom: 5px solid #6BF8D9;
+    
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 120px;
+    height: 100px;
+    margin: 2pt, 0, 0, 5%;
+}
+
+.logo2{
+    width: 120px;
+    height: 100px;
+    margin: 2pt, 0, 0, 5%;
+}
+
+.laranjinha{
+    color: #E3B663
+}
+
+.title-form{
+    margin-left: 20px;
+}
+
+.foo-text{
+    text-align: right;
+    color: #E3B663
+}

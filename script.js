@@ -79,7 +79,6 @@ function validarNome() {
     nome.focus();
   }
 }
-//teste
 
 function validarEmail(email){
     let emailFirst = /^[_a-z0-9-]+(.[_a-z0-9-]+)@[a-z0-9-]+(.[a-z0-9-]+)(.[a-z]{2,4})$/;

@@ -72,6 +72,14 @@ email.addEventListener("keyup", () => {
     }
 })
 
+function validarNome() {
+  var nome = formulario.nome;
+  if (nome.value.length < 2) {
+    alert("nome inválido");
+    nome.focus();
+  }
+}
+
 function validarEmail(email){
     let emailFirst = /^[_a-z0-9-]+(.[_a-z0-9-]+)@[a-z0-9-]+(.[a-z0-9-]+)(.[a-z]{2,4})$/;
     return emailFirst.test(email)

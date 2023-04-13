@@ -73,6 +73,56 @@ header {
     
 }
 
+.carrossel-geral{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    max-width: 600px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+.carrossel .imagem {
+    display: none;
+    animation: mudarImagem 1s;
+    height: 400px;
+    width: 600px;
+}
+
+.carrossel .imagem.ativa {
+    display: block;
+}
+
+.botoes-carrossel {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrossel .botao {
+    background-color: #6BF8D9;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #6BF8D9;
+}
+
+.botoes-carrossel .botao.selecionado {
+    background-color: black;
+}
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 footer{
     position: fixed;
     left: 0;

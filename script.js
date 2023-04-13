@@ -45,12 +45,11 @@ let textForm = document.getElementById('textForm')
 let textEmail = document.getElementById('textEmail')
 
 form.addEventListener('submit' , (e) => {
-    if(email.value == '' && password.value == ''){
+    if(email.value == ''){
         textForm.textContent = 'Preencha corretamente o campo!'
     }
 
     else if(validarEmail(email.value) === true){
-        console.log(email.value);
         console.log(email.value);
         textForm.textContent = '';
         textEmail.textContent = '';

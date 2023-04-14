@@ -17,22 +17,20 @@
     <h2 class="laranjinha"> Login </h2>
   </header>
   <form name="increva-se">
-  <h1 class="title-form">Seja o primeiro a saber</h1>
+  <br>
+  <h2 class="title-form">Seja o primeiro a conhecer a nova iniciativa que trará ar puro para todo o Brasil.</h2>
+  <h1 class="title-form">Inscreva-se</h1>
 
-  <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-  <label for="nome">Nome</label>
-
-  <input type="" id="telefone" placeholder="xx-xxxxx-xxxx" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required/>
-  <label for="fone">Fone</label>
+  <input type="text" id="nome" placeholder="Tiago Vale" required="required" name="nome" />
+  <small id="textName"></small>
+  <br>
+  <input type="" id="telefone" placeholder="(xx)xxxxx-xxxx" pattern="\(\d{2}\)\s*\d{5}-\d{4}" maxlength="15"/>
   <small id="textFone"></small>
-
-  <!-- <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-  <label for="email">Email</label> -->
-  <input type="text" id="email" placeholder="nome@mail.com" />
-  <label for="email">E-mail: </label>
+  <br>
+  <input type="text" id="email" placeholder="nome@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
   <small id="textEmail"></small>
 
-  <textarea placeholder="Deixe sua opnião"></textarea>
+  <textarea placeholder="Deixe suas dúvidas ou comentários"></textarea>
 
   <input type="submit" class="enviar" value="Enviar" />
 </form>

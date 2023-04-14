@@ -65,6 +65,8 @@ form.addEventListener('submit' , (e) => {
     else{
         console.log("Requisição não atendida")
     }
+
+    alert('Cadastro realizado!')
 })
 
 email.addEventListener("keyup", () => {

@@ -22,8 +22,9 @@
   <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
   <label for="nome">Nome</label>
 
-  <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+  <input type="" id="telefone" placeholder="xx-xxxxx-xxxx" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required/>
   <label for="fone">Fone</label>
+  <small id="textFone"></small>
 
   <!-- <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
   <label for="email">Email</label> -->
@@ -33,7 +34,7 @@
 
   <textarea placeholder="Deixe sua opnião"></textarea>
 
-  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+  <input type="submit" class="enviar" value="Enviar" />
 </form>
 
 <div class="carrossel-geral">

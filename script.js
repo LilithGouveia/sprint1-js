@@ -40,18 +40,21 @@ function DesativarBotaoSelecionado() {
 }
 
 let email = document.getElementById('email');
-let form = document.querySelector('form')
-let textForm = document.getElementById('textForm')
-let textEmail = document.getElementById('textEmail')
+let form = document.querySelector('form');
+let textForm = document.getElementById('textForm');
+let textEmail = document.getElementById('textEmail');
+const telefone = document.getElementById('telefone').value;
+console.log(telefone)
 
 form.addEventListener('submit' , (e) => {
+    e.preventDefault()
     if(email.value == ''){
         textForm.textContent = 'Preencha corretamente o campo!'
     }
 
     else if(validarEmail(email.value) === true){
         console.log(email.value);
-        textForm.textContent = '';
+        // textForm.textContent = '';
         textEmail.textContent = '';
     }
 
@@ -62,8 +65,6 @@ form.addEventListener('submit' , (e) => {
     else{
         console.log("Requisição não atendida")
     }
-
-    e.preventDefault()
 })
 
 email.addEventListener("keyup", () => {
@@ -85,4 +86,4 @@ function validarNome(nome) {
       return false
     }
     return true
-  }
+}
